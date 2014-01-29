@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>{{ baslik }}</title>
+  </head>
+</html>
+{% for aktivite in aktiviteler %}
+<h1> {{ aktivite.baslik }}</h1>
+<p>{{ aktivite.aktivite }}</p>
+{% endfor %}
+{% else %}
+  <p>aktivite yok!</p>
+{% endif %}
